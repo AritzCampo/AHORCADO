@@ -11,6 +11,12 @@ import java.util.Scanner;
  *
  */
 public class Ejercicio1 {
+	
+	final static int PESO_MOSCA = 52;
+	final static int PESO_PLUMA = 57;
+	final static int PESO_LIGERO = 64;
+	final static int PESO_MEDIANO = 90;
+	
 
 	public static void main(String[] args) {
 		// inicializo variables
@@ -26,18 +32,18 @@ public class Ejercicio1 {
 				pesoBoxeador = sc.nextInt();
 				// controlo que meta un rango de numeros correcto y saco por pantalla. Sino
 				// lanzo excepcion
-				if (pesoBoxeador > 0 && pesoBoxeador < 52) {
+				if (pesoBoxeador > 0 && pesoBoxeador < PESO_MOSCA) {
 					System.out.println("PESO MOSCA");
-				} else if (pesoBoxeador >= 52 && pesoBoxeador <= 57) {
+				} else if (pesoBoxeador >= PESO_MOSCA && pesoBoxeador <= PESO_PLUMA) {
 					System.out.println("PESO PLUMA");
 
-				} else if (pesoBoxeador >= 58 && pesoBoxeador <= 64) {
+				} else if (pesoBoxeador > PESO_PLUMA && pesoBoxeador <= PESO_LIGERO) {
 					System.out.println("PESO LIGERO");
 
-				} else if (pesoBoxeador >= 65 && pesoBoxeador <= 90) {
+				} else if (pesoBoxeador > PESO_LIGERO && pesoBoxeador <= PESO_MEDIANO) {
 					System.out.println("PESO MEDIANO");
 
-				} else if (pesoBoxeador >= 91 && pesoBoxeador < 150) {
+				} else if (pesoBoxeador > PESO_MEDIANO) {
 					System.out.println("PESO PESADO");
 
 				} else {
