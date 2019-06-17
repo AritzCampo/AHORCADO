@@ -13,8 +13,8 @@ import java.util.Scanner;
 public class Ejercicio3 {
     //declaramos constantes para que se pueda cambiar la longitud del 
 	// array y el numero que queremos saber si son multilplos mas facimente
-	public static int LONGITUD_ARRAY = 10;
-	public static int MULTIPLOS_DE = 7;
+	final static int LONGITUD_ARRAY = 10;
+	final static int MULTIPLOS_DE = 7;
 
 	public static void main(String[] args) {
         //declaracion de variables
