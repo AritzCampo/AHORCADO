@@ -10,6 +10,8 @@ import java.util.Scanner;
  *
  */
 public class Ejercicio2 {
+	
+	final static int PUNTOS_GANAR = 70;
 	/**
 	 * Funcion Ganar, calcula si ganamos en funcion de los puntos obtenidos
 	 * 
@@ -18,7 +20,7 @@ public class Ejercicio2 {
 	 */
 	public static boolean ganar(int x) {
         boolean ganar = false;
-		if (x >= 70) {
+		if (x >= PUNTOS_GANAR) {
 			ganar = true;
 		} else {
 			ganar = false;
